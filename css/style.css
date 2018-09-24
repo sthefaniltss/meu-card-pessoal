@@ -1,23 +1,24 @@
-/* GERAL */
+
 * {
     box-sizing: border-box;
     padding: 0;
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(42, 49, 50, 1)  0% ,  rgba(144, 175, 197, 1) 50%, rgba(51, 107, 135, 1)  100%) no-repeat;
-    font-family: 'Lato', Arial, Helvetica, sans-serif;
-    margin-top: 80px;
+    background-image: url("/img/background.svg");
+    background-size: cover;
+    font-family: 'Pacifico', cursive;
+
+    margin-top: 50px;
     height: 100vh;
-    overflow-x: hidden;
-    transition: 0.7s linear;
+    
 }
 
 a {
     text-decoration: none;
 }
 
-/* FONTS */
+
 h1 {
     color: #4F4F4F;
     font-size: 15pt;
@@ -26,27 +27,30 @@ h1 {
 h2 {
     color: #bfbfbf;   
     font-size: 10pt;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-/* SEÇÃO SOBRE */
+
 
 section {
     background-color: white;
     width: 85vw;
-    height: 50vh;
+    height: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .fotoPerfil {
     width: 40%;
-    margin-top:50px; 
+    margin-top:20px; 
     border-radius: 50%;
 }  
     
 .perfil {
+    height: 40%;
     text-align: center;
     
 }
@@ -55,12 +59,14 @@ section {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 100%;
+    margin-bottom: 30px;
+   
 }
 
 .redesSociais img {
-    margin-top: 15px;
-    width: 50%;
+    width: 30px;
+    height: 30px;
+    margin: auto 8px;
     filter: invert(50%)
 }
 .redesSociais img:hover{
